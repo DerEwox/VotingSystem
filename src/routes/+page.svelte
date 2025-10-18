@@ -8,9 +8,7 @@
 		sendEmailVerification,
 		signOut,
 		onAuthStateChanged,
-
 		AuthErrorCodes
-
 	} from 'firebase/auth';
 	import { getFirestore, doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
 	import { user } from '$lib/authStore.js';
@@ -133,7 +131,7 @@
 	];
 	let dropdownRef: HTMLElement;
 
-	let showMessage = false
+	let showMessage = false;
 
 	let email = '';
 	let benutzer = '';
@@ -142,90 +140,90 @@
 	let successMessage = '';
 	let isLoggedIn = false;
 	const options = [
-  "Abinoj",
-  "Abiflix",
-  "Shabi Holmes",
-  "Abivegas",
-  "Habi Potter",
-  "Abiana Jones",
-  "Abikini",
-  "HABIBO",
-  "Abiagra",
-  "Abiletten",
-  "A little Party never killed no Abi",
-  "Mabiokart", 
-  "Abier",
-  "Game of Abi",
-  "Therabi",
-  "Abios Amigos",
-  "Abi Colada",
-  "Alabin",
-  "Stabil",
-  "Abirol Spritz",
-  "Abireal",
-  "Abicetamol",
-  "Abikropolis",
-  "Chat ABiT",
-  "Abicalypse",
-  "Ability",
-  "Abigasmus",
-  "Abipunktur",
-  "Cannabis",
-  "Abi 2,026‰",
-  "Tirabisu",
-  "Barbie",
-  "Abinopoly",
-  "Abischlumpf",
-  "ABBI",
-  "ABIentchen",
-  "Hakuna Matabi",
-  "Kokabin",
-  "Teletabi",
-  "Butzbach Abiwachsenen Vollzug"
-];
+		'Abinoj',
+		'Abiflix',
+		'Shabi Holmes',
+		'Abivegas',
+		'Habi Potter',
+		'Abiana Jones',
+		'Abikini',
+		'HABIBO',
+		'Abiagra',
+		'Abiletten',
+		'A little Party never killed no Abi',
+		'Mabiokart',
+		'Abier',
+		'Game of Abi',
+		'Therabi',
+		'Abios Amigos',
+		'Abi Colada',
+		'Alabin',
+		'Stabil',
+		'Abirol Spritz',
+		'Abireal',
+		'Abicetamol',
+		'Abikropolis',
+		'Chat ABiT',
+		'Abicalypse',
+		'Ability',
+		'Abigasmus',
+		'Abipunktur',
+		'Cannabis',
+		'Abi 2,026‰',
+		'Tirabisu',
+		'Barbie',
+		'Abinopoly',
+		'Abischlumpf',
+		'ABBI',
+		'ABIentchen',
+		'Hakuna Matabi',
+		'Kokabin',
+		'Teletabi',
+		'Butzbach Abiwachsenen Vollzug'
+	];
 
-const sloagans = [
-  "12 schwarze Jahre sind vorbei",
-  "Nach 12 Staffeln endlich abgesetzt",
-  "Den Abschluss gelöst, die Punkte leider nicht",
-  "Um jeden Punkt gepokert",
-  "Schule war Vol De Mort",
-  "Die Jagd nach den verlorenen Punkten",
-  "Knapp aber passt schon",
-  "Macht Schüler froh und die Lehrer ebenso",
-  "Unser Abi steht",
-  "Mehr Streifen als Punkte",
-  "",
-  "Nach 12 Jahren endlich am Ziel",
-  "Wenigstens die Maß hat 1,0",
-  "Der Thron gehört uns",
-  "Wir verlassen die Anstalt",
-  "Nach Siesta kommt Fiesta",
-  "Hauptsache Rum",
-  "In jeder Flasche steckt ein Genie",
-  "Mental nicht aber ich hab Abi",
-  "Bitter süßes Ende",
-  "Nur 2 Minuten aufnahmefähig",
-  "Der Schmerz hat ein Ende",
-  "Die Götter verlassen den Olymp",
-  "Keine Fragen blieben offen",
-  "Weltuntergang wäre leichter gewesen",
-  "Zu allem fähig aber zu nichts zu gebrauchen",
-  "12 Jahre bis zum Höhepunkt",
-  "Jeder Punkt kostet Nerven",
-  "12 Jahre durchgezogen",
-  "Meist Dichter als Denker",
-  "Auch die Creme de la Creme muss mal gehen",
-  "Yes we Ken",
-  "Nach 12 Jahren endlich auf freien Fuß",
-  "Immer blau trotzdem schlau",
-  "The winner takes it all",
-  "Ente gut alles gut",
-  "Haste Abi biste König",
-  "Wir haben die Nase voll",
-  "Winke Winke",
-  ""
-];
+	const sloagans = [
+		'12 schwarze Jahre sind vorbei',
+		'Nach 12 Staffeln endlich abgesetzt',
+		'Den Abschluss gelöst, die Punkte leider nicht',
+		'Um jeden Punkt gepokert',
+		'Schule war Vol De Mort',
+		'Die Jagd nach den verlorenen Punkten',
+		'Knapp aber passt schon',
+		'Macht Schüler froh und die Lehrer ebenso',
+		'Unser Abi steht',
+		'Mehr Streifen als Punkte',
+		'',
+		'Nach 12 Jahren endlich am Ziel',
+		'Wenigstens die Maß hat 1,0',
+		'Der Thron gehört uns',
+		'Wir verlassen die Anstalt',
+		'Nach Siesta kommt Fiesta',
+		'Hauptsache Rum',
+		'In jeder Flasche steckt ein Genie',
+		'Mental nicht aber ich hab Abi',
+		'Bitter süßes Ende',
+		'Nur 2 Minuten aufnahmefähig',
+		'Der Schmerz hat ein Ende',
+		'Die Götter verlassen den Olymp',
+		'Keine Fragen blieben offen',
+		'Weltuntergang wäre leichter gewesen',
+		'Zu allem fähig aber zu nichts zu gebrauchen',
+		'12 Jahre bis zum Höhepunkt',
+		'Jeder Punkt kostet Nerven',
+		'12 Jahre durchgezogen',
+		'Meist Dichter als Denker',
+		'Auch die Creme de la Creme muss mal gehen',
+		'Yes we Ken',
+		'Nach 12 Jahren endlich auf freien Fuß',
+		'Immer blau trotzdem schlau',
+		'The winner takes it all',
+		'Ente gut alles gut',
+		'Haste Abi biste König',
+		'Wir haben die Nase voll',
+		'Winke Winke',
+		''
+	];
 	let votes: number[] = [];
 	let startVote = false;
 	let questionIndex = 0;
@@ -238,13 +236,13 @@ const sloagans = [
 	let optionsBackground = 'lightblue';
 
 	function showError(msg: string) {
-		showMessage = true
+		showMessage = true;
 		errorMessage = msg;
 		// setTimeout(() => (errorMessage = ''), 5000);
 	}
 
 	function showSuccess(msg: string) {
-		showMessage = true
+		showMessage = true;
 		successMessage = msg;
 		// setTimeout(() => (successMessage = ''), 5000);
 	}
@@ -259,7 +257,10 @@ const sloagans = [
 				isLoggedIn = false;
 			}
 		});
-		if(auth.currentUser?.email === "qr-scanner@example.com" || auth.currentUser?.email === "admin@example.com") logout()
+		if(auth.currentUser?.email) {
+			checkEmail(auth.currentUser.email, names)
+		}
+		
 	});
 
 	async function loadVotes() {
@@ -273,8 +274,8 @@ const sloagans = [
 			const docSnap = await getDoc(docRef);
 			if (docSnap.exists()) {
 				console.log('Got DIng');
-				votes = docSnap.data().votes || new Array(options.length).fill(0);;
-				console.log(votes)
+				votes = docSnap.data().votes || new Array(options.length).fill(0);
+				console.log(votes);
 			} else {
 				showError('Keine Optionen gefunden.');
 			}
@@ -286,7 +287,7 @@ const sloagans = [
 
 	async function register() {
 		console.log(benutzer);
-		email = benutzer + '@example.com';
+		email = benutzer + '@ewoxVoteSytem.com';
 		console.log(email);
 		try {
 			if (names.includes(benutzer)) {
@@ -298,15 +299,53 @@ const sloagans = [
 			}
 		} catch (error) {
 			if (error.message === 'Firebase: Error (auth/email-already-in-use).') {
-				showError('Ein Accout under dem Namen wurde bereits erstellt. Entweder du versuchst dich erneut anzumelden und musst auf "Login" drücken. ODER jemand anders hat sich in deinem Namen registriert, dann melde dich bitte bei Emil Schuster.')
+				showError(
+					'Ein Accout under dem Namen wurde bereits erstellt. Entweder du versuchst dich erneut anzumelden und musst auf "Login" drücken. ODER jemand anders hat sich in deinem Namen registriert, dann melde dich bitte bei Emil Schuster.'
+				);
 			} else {
 				showError('Fehler bei der Registrierung: ' + error.message);
 			}
 		}
 	}
 
+
+	//Checken ob Email valide ist
+	function checkEmail(email: string, names: string[]): boolean {
+		if (!email || typeof email !== 'string') {
+			logout();
+			return false;
+		}
+
+		const atIndex = email.indexOf('@');
+		if (atIndex <= 0) {
+			logout();
+			return false;
+		}
+
+		const userPart = email.slice(0, atIndex); // z. B. "emil.s"
+		const domainWithAt = email.slice(atIndex).toLowerCase(); // z. B. "@ewoxvotesystem.com"
+
+		// Domain muss mit "@ewoxvotesystem" beginnen
+		if (!domainWithAt.startsWith('@ewoxvotesystem')) {
+			logout();
+			return false;
+		}
+
+		// wir suchen case-insensitive: email ist lowercase, deshalb name.toLowerCase()
+		const found = names.some(
+			(name) => typeof name === 'string' && name.toLowerCase().includes(userPart)
+		);
+
+		if (!found) {
+			logout();
+			return false;
+		}
+
+		return true;
+	}
+
 	async function login() {
-		email = benutzer + '@example.com';
+		email = benutzer + '@ewoxVoteSytem.com';
 		try {
 			const userCredential = await signInWithEmailAndPassword(auth, email, password);
 			isLoggedIn = true;
@@ -372,15 +411,16 @@ const sloagans = [
 
 	// Funktion zum Schließen, wenn außerhalb geklickt wird
 	function handleClickOutside(event: MouseEvent) {
-		showMessage = false
-		errorMessage = ''
-		successMessage = ''
+		showMessage = false;
+		errorMessage = '';
+		successMessage = '';
 		if (dropdownRef && !dropdownRef.contains(event.target as Node)) {
 			isOpen = false;
 		}
 		benutzer = inputValue;
 	}
 </script>
+
 {#if isLoggedIn}
 	{#if !startVote && !end}
 		<div
@@ -414,7 +454,7 @@ const sloagans = [
 			<button
 				class="login-button"
 				style="width: 300px; margin-top: 20px;"
-				on:click={() => (startVote = true, loadVotes())}>Zur Umfrage</button
+				on:click={() => ((startVote = true), loadVotes())}>Zur Umfrage</button
 			>
 		</div>
 	{:else if startVote}
@@ -457,10 +497,10 @@ const sloagans = [
 					{questionIndex + 1} / {options.length}
 				</p>
 
-
 				<h1 style="margin: 60px 0 0; font-size: 3em; color: #222;">{options[questionIndex]}</h1>
-				<h2 style="margin-bottom: 50px; font-size: 30px; margin-top:20px">{sloagans[questionIndex]}</h2>
-
+				<h2 style="margin-bottom: 50px; font-size: 30px; margin-top:20px">
+					{sloagans[questionIndex]}
+				</h2>
 
 				<div style="display: flex; justify-content: center; gap: 5px; margin-top: 30px;">
 					<button
@@ -554,7 +594,7 @@ const sloagans = [
                 color: white; 
                 cursor: pointer;
             "
-			on:click={() => window.location.href = "./ergebnis"}
+					on:click={() => (window.location.href = './ergebnis')}
 				>
 					Zu den Ergebnissen
 				</button>
@@ -566,9 +606,15 @@ const sloagans = [
 		<div style="display: flex; justify-content: center; flex-wrap: wrap; ">
 			<h1 style="font-size: 50px;">Abi am AMG</h1>
 			<p style="flex-basis: 100%; text-align: center; margin-top: 1px">Melde dich so an:</p>
-			<p style="flex-basis: 100%; text-align: center; margin-top: 1px">1. Wähle oben deinen Namen aus</p>
-			<p style="flex-basis: 100%; text-align: center; margin-top: 1px">2. Such dir ein 6-Stelliges Passwort aus</p>
-			<p style="flex-basis: 100%; text-align: center; margin-top: 1px">3. Drücke auf Registrieren wenn du noch kein Account hast</p>
+			<p style="flex-basis: 100%; text-align: center; margin-top: 1px">
+				1. Wähle oben deinen Namen aus
+			</p>
+			<p style="flex-basis: 100%; text-align: center; margin-top: 1px">
+				2. Such dir ein 6-Stelliges Passwort aus
+			</p>
+			<p style="flex-basis: 100%; text-align: center; margin-top: 1px">
+				3. Drücke auf Registrieren wenn du noch kein Account hast
+			</p>
 		</div>
 		<div class="login-box">
 			<h2 class="login-title">Login / Registrierung</h2>
@@ -616,7 +662,6 @@ const sloagans = [
 <style>
 	/* Container für zentriertes Layout */
 	.login-container {
-		
 		display: flex;
 		flex-direction: column;
 		align-items: center;

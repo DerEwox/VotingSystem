@@ -1,0 +1,7 @@
+Es gibt 2 +page.svelte:
+
+1) Offener Modus:
+    -Liste mit allen Usernames existert und jeder könnte (theoretisch) alle claimen
+
+2) Geschlossener Modus
+    -Es wird für jeden User im vorhinein ein passwort generiert (../createusers.ts) und einzelnd ausgegeben.

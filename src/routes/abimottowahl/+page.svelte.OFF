@@ -1,3 +1,4 @@
+<!--OFFENER MODUS-->
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { auth, db, saveVote } from '$lib/firebase.js';
@@ -13,122 +14,7 @@
 	import { getFirestore, doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
 	import { user } from '$lib/authStore.js';
 
-	const names: string[] = [
-		'Eyad.D',
-		'Daniel.A',
-		'Lieselotte.B',
-		'Sarah.B',
-		'Elias.B',
-		'Liane.B',
-		'Selma.B',
-		'Fabian.B',
-		'Ann-Sophie.B',
-		'Paul.B',
-		'Yehor.B',
-		'Felix.D',
-		'Leni.D',
-		'Tim.E',
-		'Silja.E',
-		'Emilia.F',
-		'Liv.F',
-		'Arturs.F',
-		'Louisa.F',
-		'Paulina.F',
-		'Anna-Lena.G',
-		'Lucie.G',
-		'Paula.G',
-		'Lars.G',
-		'Tiana.G',
-		'Lucian.G',
-		'Nikita.G',
-		'Olivia.G',
-		'Emna.H',
-		'Lotta.H',
-		'Paul.H',
-		'Marie-Sofie.H',
-		'Lotta.H',
-		'Hanna.H',
-		'Jonathan.H',
-		'Noah.H',
-		'Justin.J',
-		'Julia.K',
-		'Isabel.K',
-		'Mehmet.K',
-		'Maidinai.K',
-		'Lena.K',
-		'Paulina.K',
-		'Leonie.K',
-		'Laura.K',
-		'Zeynepnur.K',
-		'Elias.K',
-		'Alexander.K',
-		'Todor.D',
-		'Nina.K',
-		'Paula.K',
-		'Nicolas.K',
-		'Tim.K',
-		'Luisa.K',
-		'Deniz.L',
-		'Malin.L',
-		'Mara.L',
-		'Lotta.L',
-		'Franz.M',
-		'Linda.M',
-		'Hannah.M',
-		'Sofie.M',
-		'Annika.M',
-		'Nik.M',
-		'Felix.M',
-		'Gabriel.M',
-		'Leonie.N',
-		'Dominik.N',
-		'Lukas.O',
-		'Valentin.P',
-		'Jaqueline.P',
-		'Jonathan.P',
-		'Tialda.P',
-		'Nina.P',
-		'Lara.R',
-		'Lisbeth.R',
-		'Josefine.R',
-		'Jonathan.R',
-		'Marie.R',
-		'Janina.R',
-		'Florian.R',
-		'Melina.S',
-		'Tamina.S',
-		'Isabel.S',
-		'Yvette.S',
-		'Johanna.S',
-		'Emil.S',
-		'Karl.S',
-		'Hannah.S',
-		'Francesco.S',
-		'Nick.S',
-		'Helena.S',
-		'Melanie.S',
-		'Julius.S',
-		'Laura.S',
-		'Leander.S',
-		'Dominik.S',
-		'Lara.S',
-		'Lilly.S',
-		'Sardar.T',
-		'Ivana.V',
-		'Timo.vC',
-		'Leonie.W',
-		'Helena.W',
-		'Lara.W',
-		'Mariél.W',
-		'Samuel.W',
-		'Cian.Z',
-		't-Acc1',
-		't-Acc2',
-		't-Acc3',
-		'sp-Acc1',
-		'sp-Acc2',
-		'sp-Acc3,'
-	];
+	const names: string[] = ["Maelle.A","Philipp.A","Igor.A","Charlotte.A","Cihan.A","Alexander.B","Noemi.B","Laurina.B","Joscha.B","Nils.B","Mykhailo.C","Alessia.C","Kassandra.C","Kimi.D","Meike.D","Julia.D","Kaihan.E","Philipp.E","Alina.E","Bennet.F","Matti.F","Felicitas.F","Leo.F","Lisa.G","Mariella.G","Marie.G","Maya.H","Nadhir.H","Joshua.H","Jakob.H","Lena.H","Finja.H","Moritz.H","Nils.H","Max.H","Luis.I","Raja.I","Gideon.J","Amelie.K","Hanna.K","Malte.K","Arne.K","Stefanie.L","Sarah.L","Thomas.L","Tristan.M","Katharina.M","Elisa.M","Jan.M","Hannah.M","Johannes.M","Tabea.M","Ksenia.M","Ana-Maria.N","Jonas.O","Laura.P","Julia.P","Maria.R","Nico.R","Jessica.S","Alina.S","Leni.S","Lina.S","Marin.S","Helene.S","Lotta.S","Timo.S","Jan.T","Luca.U","Andreea.V","Vanessa.V","Julius.W","Luca.W","Tom.W","Ben.W","Paula.W","Elisabeth.W","Franka.W","Rocco.Z","Amelie.Z","sp-acc1","sp-acc2","sp-acc3"];
 	let dropdownRef: HTMLElement;
 
 	let showMessage = false;
@@ -140,90 +26,112 @@
 	let successMessage = '';
 	let isLoggedIn = false;
 	const options = [
-		'Abinoj',
-		'Abiflix',
-		'Shabi Holmes',
-		'Abivegas',
-		'Habi Potter',
-		'Abiana Jones',
-		'Abikini',
-		'HABIBO',
-		'Abiagra',
-		'Abiletten',
-		'A little Party never killed no Abi',
-		'Mabiokart',
-		'Abier',
-		'Game of Abi',
-		'Therabi',
-		'Abios Amigos',
-		'Abi Colada',
-		'Alabin',
-		'Stabil',
-		'Abirol Spritz',
-		'Abireal',
-		'Abicetamol',
-		'Abikropolis',
-		'Chat ABiT',
-		'Abicalypse',
-		'Ability',
-		'Abigasmus',
-		'Abipunktur',
-		'Cannabis',
-		'Abi 2,026‰',
-		'Tirabisu',
-		'Barbie',
-		'Abinopoly',
-		'Abischlumpf',
-		'ABBI',
-		'ABIentchen',
-		'Hakuna Matabi',
-		'Kokabin',
-		'Teletabi',
-		'Butzbach Abiwachsenen Vollzug'
-	];
+  'BonABItit',
+  'ABIcentamol',
+  'ABIpunktur',
+  'ABInopoly',
+  'Westminster ABI',
+  'Schni Schna SchnABI',
+  'NABIgation ',
+  'Das Abi mit der Maus',
+  'ABIos Amigos',
+  'CannABIs '
+]
+	// 	'Abinoj',
+	// 	'Abiflix',
+	// 	'Shabi Holmes',
+	// 	'Abivegas',
+	// 	'Habi Potter',
+	// 	'Abiana Jones',
+	// 	'Abikini',
+	// 	'HABIBO',
+	// 	'Abiagra',
+	// 	'Abiletten',
+	// 	'A little Party never killed no Abi',
+	// 	'Mabiokart',
+	// 	'Abier',
+	// 	'Game of Abi',
+	// 	'Therabi',
+	// 	'Abios Amigos',
+	// 	'Abi Colada',
+	// 	'Alabin',
+	// 	'Stabil',
+	// 	'Abirol Spritz',
+	// 	'Abireal',
+	// 	'Abicetamol',
+	// 	'Abikropolis',
+	// 	'Chat ABiT',
+	// 	'Abicalypse',
+	// 	'Ability',
+	// 	'Abigasmus',
+	// 	'Abipunktur',
+	// 	'Cannabis',
+	// 	'Abi 2,026‰',
+	// 	'Tirabisu',
+	// 	'Barbie',
+	// 	'Abinopoly',
+	// 	'Abischlumpf',
+	// 	'ABBI',
+	// 	'ABIentchen',
+	// 	'Hakuna Matabi',
+	// 	'Kokabin',
+	// 	'Teletabi',
+	// 	'Butzbach Abiwachsenen Vollzug'
+	// ];
 
 	const sloagans = [
-		'12 schwarze Jahre sind vorbei',
-		'Nach 12 Staffeln endlich abgesetzt',
-		'Den Abschluss gelöst, die Punkte leider nicht',
-		'Um jeden Punkt gepokert',
-		'Schule war Vol De Mort',
-		'Die Jagd nach den verlorenen Punkten',
-		'Knapp aber passt schon',
-		'Macht Schüler froh und die Lehrer ebenso',
-		'Unser Abi steht',
-		'Mehr Streifen als Punkte',
-		'',
-		'Nach 12 Jahren endlich am Ziel',
-		'Wenigstens die Maß hat 1,0',
-		'Der Thron gehört uns',
-		'Wir verlassen die Anstalt',
-		'Nach Siesta kommt Fiesta',
-		'Hauptsache Rum',
-		'In jeder Flasche steckt ein Genie',
-		'Mental nicht aber ich hab Abi',
-		'Bitter süßes Ende',
-		'Nur 2 Minuten aufnahmefähig',
-		'Der Schmerz hat ein Ende',
-		'Die Götter verlassen den Olymp',
-		'Keine Fragen blieben offen',
-		'Weltuntergang wäre leichter gewesen',
-		'Zu allem fähig aber zu nichts zu gebrauchen',
-		'12 Jahre bis zum Höhepunkt',
-		'Jeder Punkt kostet Nerven',
-		'12 Jahre durchgezogen',
-		'Meist Dichter als Denker',
-		'Auch die Creme de la Creme muss mal gehen',
-		'Yes we Ken',
-		'Nach 12 Jahren endlich auf freien Fuß',
-		'Immer blau trotzdem schlau',
-		'The winner takes it all',
-		'Ente gut alles gut',
-		'Haste Abi biste König',
-		'Wir haben die Nase voll',
-		'Winke Winke',
-		''
-	];
+  '12 Jahre gekocht jetzt wird gegessen',
+  'der Schmerz hat ein Ende',
+  'jeder Punkt kostet Nerven',
+  '12 Jahre auf dem Gefängnisfeld',
+  'der Adel geht',
+  'Wir schnappen unser Abi',
+  'Sie haben ihr Ziel erreicht',
+  '',
+  "12 Jahre Siesta jetzt gibt's Fiesta",
+  ' alles Begann mit einer Tüte'
+]
+	// 	'12 schwarze Jahre sind vorbei',
+	// 	'Nach 12 Staffeln endlich abgesetzt',
+	// 	'Den Abschluss gelöst, die Punkte leider nicht',
+	// 	'Um jeden Punkt gepokert',
+	// 	'Schule war Vol De Mort',
+	// 	'Die Jagd nach den verlorenen Punkten',
+	// 	'Knapp aber passt schon',
+	// 	'Macht Schüler froh und die Lehrer ebenso',
+	// 	'Unser Abi steht',
+	// 	'Mehr Streifen als Punkte',
+	// 	'',
+	// 	'Nach 12 Jahren endlich am Ziel',
+	// 	'Wenigstens die Maß hat 1,0',
+	// 	'Der Thron gehört uns',
+	// 	'Wir verlassen die Anstalt',
+	// 	'Nach Siesta kommt Fiesta',
+	// 	'Hauptsache Rum',
+	// 	'In jeder Flasche steckt ein Genie',
+	// 	'Mental nicht aber ich hab Abi',
+	// 	'Bitter süßes Ende',
+	// 	'Nur 2 Minuten aufnahmefähig',
+	// 	'Der Schmerz hat ein Ende',
+	// 	'Die Götter verlassen den Olymp',
+	// 	'Keine Fragen blieben offen',
+	// 	'Weltuntergang wäre leichter gewesen',
+	// 	'Zu allem fähig aber zu nichts zu gebrauchen',
+	// 	'12 Jahre bis zum Höhepunkt',
+	// 	'Jeder Punkt kostet Nerven',
+	// 	'12 Jahre durchgezogen',
+	// 	'Meist Dichter als Denker',
+	// 	'Auch die Creme de la Creme muss mal gehen',
+	// 	'Yes we Ken',
+	// 	'Nach 12 Jahren endlich auf freien Fuß',
+	// 	'Immer blau trotzdem schlau',
+	// 	'The winner takes it all',
+	// 	'Ente gut alles gut',
+	// 	'Haste Abi biste König',
+	// 	'Wir haben die Nase voll',
+	// 	'Winke Winke',
+	// 	''
+	// ];
 	let votes: number[] = [];
 	let startVote = false;
 	let questionIndex = 0;
@@ -252,14 +160,12 @@
 		document.addEventListener('click', handleClickOutside);
 		onAuthStateChanged(auth, async (firebaseUser) => {
 			if (firebaseUser) {
+				checkEmail(firebaseUser.email!, names)
 				isLoggedIn = true;
 			} else {
 				isLoggedIn = false;
 			}
 		});
-		if(auth.currentUser?.email) {
-			checkEmail(auth.currentUser.email, names)
-		}
 		
 	});
 
@@ -287,7 +193,7 @@
 
 	async function register() {
 		console.log(benutzer);
-		email = benutzer + '@ewoxVoteSytem.com';
+		email = benutzer + '@ewoxvotesystem.com';
 		console.log(email);
 		try {
 			if (names.includes(benutzer)) {
@@ -311,6 +217,7 @@
 
 	//Checken ob Email valide ist
 	function checkEmail(email: string, names: string[]): boolean {
+		console.log("email:", email)
 		if (!email || typeof email !== 'string') {
 			logout();
 			return false;
@@ -345,7 +252,7 @@
 	}
 
 	async function login() {
-		email = benutzer + '@ewoxVoteSytem.com';
+		email = benutzer + '@ewoxvotesystem.com';
 		try {
 			const userCredential = await signInWithEmailAndPassword(auth, email, password);
 			isLoggedIn = true;
@@ -610,7 +517,7 @@
 				1. Wähle oben deinen Namen aus
 			</p>
 			<p style="flex-basis: 100%; text-align: center; margin-top: 1px">
-				2. Such dir ein 6-Stelliges Passwort aus
+				2. Such dir ein 6-Stelliges Passwort aus (kannste eig gleich wieder vergessen)
 			</p>
 			<p style="flex-basis: 100%; text-align: center; margin-top: 1px">
 				3. Drücke auf Registrieren wenn du noch kein Account hast

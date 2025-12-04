@@ -10,6 +10,10 @@
 		"sourceMap": true,
 		"strict": true,
 		"module": "NodeNext",
-		"moduleResolution": "NodeNext"
+		"moduleResolution": "NodeNext",
+		"declaration": true,        // erzeugt .d.ts-Dateien
+		"declarationDir": "dist",   // legt die .d.ts-Dateien in dist/
+		"emitDeclarationOnly": true  // optional: nur die Typen ausgeben, kein JS
+
 	}
 }

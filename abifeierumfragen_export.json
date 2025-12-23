@@ -1,0 +1,28 @@
+[
+  {
+    "name": "emil.s",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 1,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Daniel.A",
+      "Julius.S"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "paulina.k",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Leonie.N",
+      "Jonathan.P"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  }
+]

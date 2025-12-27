@@ -1,5 +1,96 @@
 [
   {
+    "name": "alexander.k",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Julius.S",
+      "Jonathan.H"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "ann-sophie.b",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Yvette.S",
+      "Alexander.K"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "cian.z",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 1,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Paul.B",
+      "Tim.K"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "daniel.a",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 1,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Dominik.S",
+      "Emil.S"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "deniz.l",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Mehmet.K",
+      "Samuel.W"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "dominik.n",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 1,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Julia.K",
+      ""
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "dominik.s",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Felix.M",
+      "Liane.B"
+    ],
+    "forceNeighbors": true,
+    "foreceNeighborsReason": "Ich möchte Felix emotional unterstützen, wenn er sein Zeugnis bekommt."
+  },
+  {
     "name": "emil.s",
     "ticketAmount": 4,
     "fifthTicket": true,
@@ -13,6 +104,466 @@
     "foreceNeighborsReason": ""
   },
   {
+    "name": "emna.h",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 4,
+    "vegitarianZusatz": 1,
+    "neighbors": [
+      "Maidinai.K",
+      "Zeynepnur.K"
+    ],
+    "forceNeighbors": true,
+    "foreceNeighborsReason": "Religiöse Gründe"
+  },
+  {
+    "name": "eyad.d",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Valentin.P",
+      "Yehor.B"
+    ],
+    "forceNeighbors": true,
+    "foreceNeighborsReason": "Bitte kein Schweinefleisch:)"
+  },
+  {
+    "name": "fabian.b",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Nick.S",
+      "Jonathan.P"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "felix.m",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 1,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Emil.S",
+      "Dominik.S"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "gabriel.m",
+    "ticketAmount": 3,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Lars.G",
+      "Karl.S"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "hanna.h",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 1,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Lilly.S",
+      "Lucie.G"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "hannah.s",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 2,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Lucie.G",
+      ""
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "helena.w",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "isabel.s",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 2,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Jaqueline.P",
+      "Tamina.S"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "ivana.v",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Tialda.P",
+      "Lena.K"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "jaqueline.p",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "jonathan.p",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Samuel.W",
+      "Nicolas.K"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "jonathan.r",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "julia.k",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Dominik.N",
+      "Tim.K"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "julius.s",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 1,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Dominik.S",
+      "Emil.S"
+    ],
+    "forceNeighbors": true,
+    "foreceNeighborsReason": "test"
+  },
+  {
+    "name": "justin.j",
+    "ticketAmount": 0,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "",
+      ""
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "lara.w",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 1,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Sofie.M",
+      "Yvette.S"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "lars.g",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Gabriel.M",
+      "Karl.S"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "lena.k",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Mara.L",
+      "Tim.E"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "leonie.n",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "liane.b",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "",
+      ""
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "lieselotte.b",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 2,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Lara.R",
+      "Silja.E"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "lisbeth.r",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "liv.f",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Leonie.K",
+      "Laura.K"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "louisa.f",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Janina.R",
+      "Marie-Sofie.H"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "lukas.o",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "",
+      ""
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "maidinai.k",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 4,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Emna.H",
+      "Zeynepnur.K"
+    ],
+    "forceNeighbors": true,
+    "foreceNeighborsReason": "Aus religiösen Gründen "
+  },
+  {
+    "name": "mara.l",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Lena.K",
+      "Tim.E"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "mariél.w",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Malin.L",
+      "Selma.B"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "nicolas.k",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 1,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Samuel.W",
+      "Jonathan.P"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "nik.m",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 1,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Selma.B",
+      "Samuel.W"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "nikita.g",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 1,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Samuel.W",
+      "Tim.K"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "nina.k",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Lotta.L",
+      ""
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "nina.p",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 1,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Karl.S",
+      "Josefine.R"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "olivia.g",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Paula.G",
+      "Sofie.M"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "paul.b",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "paula.g",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 1,
+    "vegitarianZusatz": 0,
+    "neighbors": [],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
     "name": "paulina.k",
     "ticketAmount": 4,
     "fifthTicket": true,
@@ -22,6 +573,156 @@
       "Leonie.N",
       "Jonathan.P"
     ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "samuel.w",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 2,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Nicolas.K",
+      "Tim.K"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "sarah.b",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Josefine.R",
+      "Paulina.F"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "sardar.t",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 4,
+    "vegitarianZusatz": 1,
+    "neighbors": [
+      "Mehmet.K",
+      "Maidinai.K"
+    ],
+    "forceNeighbors": true,
+    "foreceNeighborsReason": "Weil sie sich kennen "
+  },
+  {
+    "name": "silja.e",
+    "ticketAmount": 3,
+    "fifthTicket": true,
+    "vegitarian": 1,
+    "vegitarianZusatz": 0,
+    "neighbors": [],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "sofie.m",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 2,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Lara.W",
+      "Olivia.G"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "tamina.s",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 1,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Leni.D",
+      "Jaqueline.P"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "tialda.p",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Ivana.V",
+      "Lena.K"
+    ],
+    "forceNeighbors": true,
+    "foreceNeighborsReason": "( btw lowkey sick dass es anscheinden dafür religiöse Gründe geben soll  aber oke ?? ) Ich nehm Ivana und Lena neben mich wenn’s geht. "
+  },
+  {
+    "name": "tiana.g",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Janina.R",
+      "Helena.W"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "timo.vc",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 0,
+    "vegitarianZusatz": 1,
+    "neighbors": [
+      "Daniel.A",
+      "Felix.M"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "valentin.p",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Eyad.A",
+      "Franz.M"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "yvette.s",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 1,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Lara.W",
+      "Sofie.M"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "zeynepnur.k",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 4,
+    "vegitarianZusatz": 0,
+    "neighbors": [],
     "forceNeighbors": false,
     "foreceNeighborsReason": ""
   }

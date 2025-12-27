@@ -7,7 +7,7 @@
     "vegitarianZusatz": 0,
     "neighbors": [
       "Julius.S",
-      "Jonathan.H"
+      "Ann-Sophie.B"
     ],
     "forceNeighbors": false,
     "foreceNeighborsReason": ""
@@ -20,7 +20,7 @@
     "vegitarianZusatz": 0,
     "neighbors": [
       "Yvette.S",
-      "Alexander.K"
+      "Lara.S"
     ],
     "forceNeighbors": false,
     "foreceNeighborsReason": ""
@@ -156,6 +156,19 @@
     "foreceNeighborsReason": ""
   },
   {
+    "name": "florian.r",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Emil.S",
+      "Julius.S"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
     "name": "gabriel.m",
     "ticketAmount": 3,
     "fifthTicket": false,
@@ -177,6 +190,19 @@
     "neighbors": [
       "Lilly.S",
       "Lucie.G"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "hannah.m",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Leni.D",
+      "Paula.G"
     ],
     "forceNeighbors": false,
     "foreceNeighborsReason": ""
@@ -237,6 +263,19 @@
     "vegitarian": 0,
     "vegitarianZusatz": 0,
     "neighbors": [],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "johanna.s",
+    "ticketAmount": 2,
+    "fifthTicket": false,
+    "vegitarian": 2,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Laura.K",
+      "Liv.F"
+    ],
     "forceNeighbors": false,
     "foreceNeighborsReason": ""
   },
@@ -342,6 +381,19 @@
     "foreceNeighborsReason": ""
   },
   {
+    "name": "leni.d",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 1,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Hannah.M",
+      "Tamina.S"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
     "name": "leonie.n",
     "ticketAmount": 4,
     "fifthTicket": false,
@@ -410,6 +462,16 @@
       "Janina.R",
       "Marie-Sofie.H"
     ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "luisa.k",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [],
     "forceNeighbors": false,
     "foreceNeighborsReason": ""
   },
@@ -560,6 +622,19 @@
     "vegitarian": 1,
     "vegitarianZusatz": 0,
     "neighbors": [],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "paula.k",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 1,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Noah.H",
+      "Leonie.K"
+    ],
     "forceNeighbors": false,
     "foreceNeighborsReason": ""
   },

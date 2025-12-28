@@ -221,6 +221,19 @@
     "foreceNeighborsReason": ""
   },
   {
+    "name": "helena.s",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 1,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Jaqueline.P",
+      "Isabel.S"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
     "name": "helena.w",
     "ticketAmount": 4,
     "fifthTicket": false,
@@ -259,10 +272,13 @@
   {
     "name": "jaqueline.p",
     "ticketAmount": 4,
-    "fifthTicket": false,
+    "fifthTicket": true,
     "vegitarian": 0,
     "vegitarianZusatz": 0,
-    "neighbors": [],
+    "neighbors": [
+      "Isabel.S",
+      "Tamina.S"
+    ],
     "forceNeighbors": false,
     "foreceNeighborsReason": ""
   },
@@ -430,6 +446,16 @@
     "foreceNeighborsReason": ""
   },
   {
+    "name": "linda.m",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
     "name": "lisbeth.r",
     "ticketAmount": 4,
     "fifthTicket": true,
@@ -466,12 +492,28 @@
     "foreceNeighborsReason": ""
   },
   {
+    "name": "lucie.g",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Hanna.H",
+      "Hannah.S"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
     "name": "luisa.k",
     "ticketAmount": 4,
     "fifthTicket": false,
     "vegitarian": 0,
     "vegitarianZusatz": 0,
-    "neighbors": [],
+    "neighbors": [
+      "Laura.S",
+      "Lotta.L"
+    ],
     "forceNeighbors": false,
     "foreceNeighborsReason": ""
   },

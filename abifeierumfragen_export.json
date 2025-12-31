@@ -26,6 +26,19 @@
     "foreceNeighborsReason": ""
   },
   {
+    "name": "anna-lena.g",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Josefine.R",
+      "Helena.W"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
     "name": "cian.z",
     "ticketAmount": 4,
     "fifthTicket": true,
@@ -197,7 +210,7 @@
   {
     "name": "hannah.m",
     "ticketAmount": 4,
-    "fifthTicket": false,
+    "fifthTicket": true,
     "vegitarian": 0,
     "vegitarianZusatz": 0,
     "neighbors": [
@@ -358,6 +371,19 @@
     "foreceNeighborsReason": ""
   },
   {
+    "name": "karl.s",
+    "ticketAmount": 4,
+    "fifthTicket": false,
+    "vegitarian": 0,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Josefine.R",
+      "Franz.M"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
     "name": "lara.w",
     "ticketAmount": 4,
     "fifthTicket": false,
@@ -426,7 +452,7 @@
     "vegitarian": 0,
     "vegitarianZusatz": 0,
     "neighbors": [
-      "",
+      "Dominik.S",
       ""
     ],
     "forceNeighbors": false,
@@ -441,6 +467,19 @@
     "neighbors": [
       "Lara.R",
       "Silja.E"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "lilly.s",
+    "ticketAmount": 3,
+    "fifthTicket": false,
+    "vegitarian": 1,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Hanna.H",
+      "Melanie.S"
     ],
     "forceNeighbors": false,
     "foreceNeighborsReason": ""
@@ -533,7 +572,7 @@
   {
     "name": "maidinai.k",
     "ticketAmount": 4,
-    "fifthTicket": true,
+    "fifthTicket": false,
     "vegitarian": 4,
     "vegitarianZusatz": 0,
     "neighbors": [
@@ -738,7 +777,10 @@
     "fifthTicket": true,
     "vegitarian": 1,
     "vegitarianZusatz": 0,
-    "neighbors": [],
+    "neighbors": [
+      "Lotta.H",
+      "Lieselotte.B"
+    ],
     "forceNeighbors": false,
     "foreceNeighborsReason": ""
   },
@@ -790,6 +832,19 @@
     "neighbors": [
       "Janina.R",
       "Helena.W"
+    ],
+    "forceNeighbors": false,
+    "foreceNeighborsReason": ""
+  },
+  {
+    "name": "tim.k",
+    "ticketAmount": 4,
+    "fifthTicket": true,
+    "vegitarian": 1,
+    "vegitarianZusatz": 0,
+    "neighbors": [
+      "Samuel.W",
+      "Felix.D"
     ],
     "forceNeighbors": false,
     "foreceNeighborsReason": ""
